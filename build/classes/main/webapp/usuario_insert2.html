@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Cadastro Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<a href="index.html">
+        <img src="imagens/logo2.jpg" alt="Logo2" class="logo2">
+    </a>
+
+    <a href="index.html">
+        <button class="back-button">
+            &#8592; Voltar
+        </button>
+    </a>
+
+
+	<h1>CADASTRE-SE</h1>
+	<form name="frmUsuario" action="usuario_insert" method="POST"  enctype="multipart/form-data">
+	
+			<label for="usuario_nome">Nome</label>
+            <input type="text" name="usuario_nome" placeholder="Digite seu nome" class="form-input"><br>
+
+            
+            <label for="usuario_sexo">Sexo:</label>
+
+				<label>
+                    <input type="radio" name="usuario_sexo" value="M" checked>Homem
+                </label>
+                <label>
+                    <input type="radio" name="usuario_sexo" value="F">Mulher
+                </label>
+
+            
+            <label for="usuario_idade">Idade</label>
+            <input type="text" name="usuario_idade" placeholder="Digite sua idade" class="form-input"><br>
+           
+			<label for="usuario_email">Email</label>
+            <input type="email" name="usuario_email" placeholder="Digite seu email" class="form-input"><br>
+
+            <label for="usuario_senha">Senha</label>
+            <input type="password" name="usuario_senha" placeholder="Digite sua senha" class="form-input"><br>
+            
+            <label for="usuario_foto">Foto:</label>
+			<input type="file" name="usuario_file_name" class="Caixa1" accept=".jpg, .jpeg, .png"><br>
+
+            <button class="btn-login" type="submit" onclick="usuario_validate()">Cadastrar</button>
+		
+    </form>
+
+	<script src="scripts/usuario_validate.js"></script>
+</body>
+</html>
