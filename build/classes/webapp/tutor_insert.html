@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Tutores</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Novo Tutor</h1>
+	<form name="frmTutor" action="tutor_insert">
+		<table>
+			<tr>
+				<td>Nome:</td>
+				<td><input type="text" name="tutor_nome" placeholder="Nome" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td>Telefone:</td>
+				<td><input type="text" name="tutor_telefone" placeholder="Telefone" class="Caixa2"></td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td><input type="text" name="tutor_email" placeholder="Email" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td>Senha:</td>
+				<td><input type="password" name="tutor_senha" placeholder="Senha" class="Caixa1"></td>
+			</tr>
+		</table>
+		<br>
+		<input type="button" value="Adicionar" class="Botao1" onclick="tutor_validate()">
+	</form>
+	<script src="scripts/tutor_validate.js"></script>
+</body>
+</html>

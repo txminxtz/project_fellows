@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Animais</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Seleção de Animais</h1>
+	<form action="animal_home_busca">
+		<table>
+			<tr>
+				<td>Usuário:</td>
+				<td><input type="text" name="animal_usuario" class="caixa3" readonly value="Funcionario"></td>
+			</tr>
+			<tr>
+				<td>Adotado:</td>
+				<td><select id="animal_adotante" name="animal_adotante">
+					<option value=""></option>
+					<option value="S">Sim</option>
+					<option value="0">Não</option>
+					</select>
+				</td>
+			<tr>
+				<td>Espécie:</td>
+				<td><select id="animal_especie" name="animal_especie">
+					<option value=""></option>
+					<option value="Gato">Gato</option>
+					<option value="Cachorro">Cachorro</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Raça:</td>
+				<td><input type="text" name="animal_raca" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td>Idade:</td>
+				<td><input type="text" name="animal_idade" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td>Sexo:</td>
+				<td><select id="animal_sexo" name="animal_sexo">
+					<option value=""></option>
+					<option value="M">Macho</option>
+					<option value="F">Fêmea</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<button type="submit" class="Botao1">Buscar</button>
+	</form>
+
+	<p class="label_cadastrar">	
+	
+		<a class="label_cadastrar" href="index.html" >
+			Home
+		</a>
+	
+	</p>
+				
+</body>
+</html>

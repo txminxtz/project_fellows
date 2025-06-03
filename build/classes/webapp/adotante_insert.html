@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Adotantes</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Novo Adotante</h1>
+	<form name="frmAdotante" action="adotante_insert">
+		<table>
+			<tr>
+				<td>Nome:</td>
+				<td><input type="text" name="adotante_nome" placeholder="Nome" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td>Telefone:</td>
+				<td><input type="text" name="adotante_telefone" placeholder="Telefone" class="Caixa2"></td>
+			</tr>
+			<tr>
+				<td>E-mail:</td>
+				<td><input type="text" name="adotante_email" placeholder="Email" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td>Senha:</td>
+				<td><input type="password" name="adotante_senha" placeholder="Senha" class="Caixa1"></td>
+			</tr>
+		</table>
+		<input type="button" value="Adicionar" class="Botao1" onclick="adotante_validate()">
+	</form>
+	<script src="scripts/adotante_validate.js"></script>
+</body>
+</html>
